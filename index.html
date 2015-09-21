@@ -4,18 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="金柄拓也,プログラミング,Ruby,Ruby on rails,techacademy">
     <title>金柄拓也 | 自己紹介</title>
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
      <header>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            
+            <!--トグルボタン-->
+            <button type="button" class="navbar-toggle collapsed" 
+            data-toggle="collapse" data-target="#nav-content1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+            <!--ロゴ部分-->
+            <a class="navbar-brand" href="index.html">TAKUYA KANETSUKA</a>
+          </div>
+          
+        <!--トグルボタンのリンクリスト-->
+        <div class="collapse navbar-collapse" id="nav-content1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>   
+        </div>
+        </div>  
       </nav>
       <div id="logo">
         <img src="takuya.jpg" alt="" />
@@ -29,9 +53,10 @@
           <p>金柄　拓也（大学生）</p>
           <p>東京都品川区在住。都内の私立大学に通っております。</p>
           <p>最近は、<span class="red">Ruby on Rails</span>を学んでおります。</p>
-          <p>私のポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
+          <p>私のポートフォリオを見て気になった方は、下記連絡先よりご連絡お願い致します。</p>
           <h3>リンク</h3>
             <ul>
+              <li><a href="https://github.com/tk436920" target="_blank">Github</a></li>
               <li><a href="https://www.facebook.com/takuya.kanetsuka" target="_blank">Facebook</a></li>
               <li><a href="https:///twitter.com/Tkanetsuka" target="_blank">Twitter</a></li>
             </ul>
